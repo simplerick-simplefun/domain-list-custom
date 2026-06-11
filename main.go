@@ -16,7 +16,7 @@ var (
 	datName      = flag.String("datname", "geosite.dat", "Name of the generated dat file")
 	outputPath   = flag.String("outputpath", "./publish", "Output path to the generated files")
 	exportLists  = flag.String("exportlists", "category-ads-all,category-dev,category-games-!cn,category-games-cn,cn,geolocation-!cn,private,adobe,amd,aws,cloudflare,dmm,dmm-porn,logitech,microsoft,nvidia", "Lists to be exported in plaintext format, separated by ',' comma")
-	excludeAttrs = flag.String("excludeattrs", "category-games-!cn@!cn,cn@!cn@ads,geolocation-!cn@cn@ads", "Exclude rules with certain attributes in certain lists, seperated by ',' comma, support multiple attributes in one list. Example: geolocation-!cn@cn@ads,geolocation-cn@!cn")
+	excludeAttrs = flag.String("excludeattrs", "cn@ads,geolocation-!cn@cn@ads", "Exclude rules with certain attributes in certain lists, seperated by ',' comma, support multiple attributes in one list. Example: geolocation-!cn@cn@ads,geolocation-cn@!cn")
 	toGFWList    = flag.String("togfwlist", "geolocation-!cn", "List to be exported in GFWList format")
 )
 
